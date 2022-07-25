@@ -3,14 +3,11 @@ import dataNascimento from './retornaDataNascimento.js';
 
 function verifica_data_range(data, data_inicio, data_fim, tipo_comparacao) {
     if (tipo_comparacao == 'and') {
-
         return data >= data_inicio && data <= data_fim;
-
     } else if (tipo_comparacao == 'or') {
-
         return data >= data_inicio || data <= data_fim;
     }
-};
+}
 
 function retornaSigno() {
     let data = dataNascimento();
@@ -26,6 +23,6 @@ function retornaSigno() {
             return signo['Nome'];
         }
     }
-};
+}
 
 export default retornaSigno;
