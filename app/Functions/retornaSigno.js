@@ -1,7 +1,7 @@
 import listaDeSignos from '../DataBase/dados.js';
 import dataNascimento from './retornaDataNascimento.js';
 
-const verifica_data_range = (data, data_inicio, data_fim, tipo_comparacao) => {
+function verifica_data_range(data, data_inicio, data_fim, tipo_comparacao) {
     if (tipo_comparacao == 'and') {
 
         return data >= data_inicio && data <= data_fim;
@@ -12,7 +12,7 @@ const verifica_data_range = (data, data_inicio, data_fim, tipo_comparacao) => {
     }
 };
 
-const retornaSigno = () => {
+function retornaSigno() {
     let data = dataNascimento();
     let ano = data.getFullYear();
 
