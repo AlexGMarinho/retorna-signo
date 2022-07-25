@@ -1,7 +1,6 @@
 import readlineSync from 'readline-sync';
 
-function diaRegistrado() 
-{
+function diaRegistrado() {
     console.log(`=== Digite o Dia e Mês que você nasceu ===`);
 
     let dia = readlineSync.questionFloat('Dia: ');
@@ -9,8 +8,7 @@ function diaRegistrado()
     return dia;
 }
 
-function mesRegistrado() 
-{
+function mesRegistrado() {
     let mes = readlineSync.questionFloat('Mes: ');
 
     return mes;
