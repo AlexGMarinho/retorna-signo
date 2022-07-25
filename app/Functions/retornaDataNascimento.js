@@ -1,7 +1,6 @@
-import {diaRegistrado, mesRegistrado} from './registraData.js'
+import { diaRegistrado, mesRegistrado } from './registraData.js';
 
-function dataNascimento() 
-{
+function dataNascimento() {
     let dataNascimento = new Date();
 
     dataNascimento.setDate(diaRegistrado());
