@@ -1,4 +1,4 @@
-import retornaSigno from './app/src/Functions/retornaSigno.js';
+import retornaSigno from './Functions/retornaSigno.js';
 
 const nome_signo = retornaSigno();
 
